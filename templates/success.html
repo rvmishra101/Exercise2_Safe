@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <title>You have joined the Chain-for-Children's-Cheer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link href="{{ url_for('static', filename='layout/styles/layout.css') }}" rel="stylesheet" type="text/css"
+        media="all">
+</head>
+
+<body id="top">
+    <div class="wrapper row3">
+        <main class="hoc container clear">
+            <div class="content font-big">
+                <h2 class="heading font-x2">You have joined the <b>
+                        <font color="#0000ff">Chain-for-Children's-Cheer</font>
+                    </b></h2>
+                <p>You are member number <b>{{ member_number }}</b> in the <font color="#0000ff"><b>Chain for Children's
+                            Cheer</b></font>
+                </p>
+                <p>You have joined as <b>{{ member_type }}</b>. Do not forget to convince at least <b>{{
+                        min_people_to_join }}</b> more people to join the chain!</p>
+                <p>
+                    Need material to get others to join the chain? Please see: <a class="btn"
+                        href="{{ url_for('resources') }}">Resources to Educate &amp; Awaken</a>
+                </p>
+                <p><b>{{ total_members }}</b> members (as of 01 Feb 2022) in the <b>
+                        <font color="#0000ff">Chain-for-Children's-Cheer</font>
+                    </b>: <a class="btn" href="{{ url_for('result') }}">View</a></p>
+                <p>Click <a href="{{ url_for('index') }}">here</a> to go back to the main page.</p>
+            </div>
+        </main>
+        <div class="clear"></div>
+    </div>
+    <div class="wrapper row3">
+        <main class="hoc container clear">
+            <div class="content">
+            </div>
+            <div class="clear"></div>
+        </main>
+    </div>
+    <div class="wrapper row5">
+        <div id="copyright" class="hoc clear">
+            <p class="fl_left">
+            <figure><strong>Contact us:</strong>
+            </figure>
+            Join <a href="https://telegram.org/">Telegram</a> channel: <a
+                href="https://t.me/u5india">https://t.me/u5india</a><br />
+            Email: <img src="{{ url_for('static', filename='images/happy22kidsemail.png') }}" style="width:50%">
+            </p>
+            <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/"
+                    title="Free Website Templates">OS Templates</a></p>
+        </div>
+    </div>
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+</body>
+
+</html>
